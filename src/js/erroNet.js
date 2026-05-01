@@ -3,6 +3,7 @@ import { dadosTempo } from './mapeamentoDom.js';
 import { somErro } from './mapeamentoDom.js';
 import { dadosPrev } from './mapeamentoDom.js';
 
+
 let timeErroNetId;
 
 export default function mostrarErroNet(msg, img = "") {
