@@ -6,7 +6,6 @@ import mostrarErroNet from './erroNet.js';
 import createSkeleton from './renderSkeleton.js';
 
 
-
 const chaveApi = '552c00ab853e988eb97637ded0156031';
 
 let timeCampoVazioId;
