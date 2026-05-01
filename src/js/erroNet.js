@@ -10,7 +10,7 @@ export default function mostrarErroNet(msg, img = "") {
   erroMsg.innerHTML = msg;
   erroMsg.classList.add("active");
   
-  dadosTempo.innerHTML = msg ? `<img class="erro-img" src="${img}">` : "";
+  dadosTempo.innerHTML = msg ? `<img class="erro-img" src=${img}>` : "";
   dadosTempo.classList.add("active");
   
   dadosPrev.innerHTML = '<p>Conecte-se ao uma internet 🛜</p>';
