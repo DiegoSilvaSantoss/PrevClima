@@ -1,0 +1,11 @@
+export const botaoBusca = document.querySelector(".btn-busca");      
+export const campoCidade = document.querySelector(".campo-city");
+export const campoVazio = document.querySelector(".campo-vazio");
+export const dadosTempo = document.querySelector(".dados-temp");
+export const dadosPrev = document.querySelector(".dados-prev")
+export const erroMsg = document.querySelector(".erro-msg");
+export const clearCampo = document.querySelector(".clear-campo");
+export const okCidade = document.querySelector(".ok-cidade");
+export const somOk = document.querySelector(".som-ok");
+export const somErro = document.querySelector(".som-erro");
+export const btnVoz = document.querySelector(".btn-voz")
