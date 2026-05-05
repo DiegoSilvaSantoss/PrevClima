@@ -4,6 +4,7 @@ import mostrarErro from './erroMensagem.js';
 import mostrarOk from './okMensagem.js';
 import mostrarErroNet from './erroNet.js';
 import createSkeleton from './renderSkeleton.js';
+import { vozJavis } from './mapeamentoDom.js';
 
 
 const chaveApi = '552c00ab853e988eb97637ded0156031';
@@ -12,9 +13,13 @@ let timeCampoVazioId;
 let debounceTimeout;
 const cache = new Map();
 
+
 function tratarErroHTTP(status) {
   if (status === 404) {
     mostrarErro("Cidade não encontrada :(", "./src/img/interface-design.png");
+    vozJavis.currentTime = 0;
+    vozJavis.volume = 0.6;
+    vozJavis.play();
   } else if (status >= 500) {
     mostrarErro("Erro no servidor, tente mais tarde :(");
   } else {
@@ -114,7 +119,7 @@ campoCidade.addEventListener('input', async (e) => {
     return;
   }
   
-
+  
   if (valor.length < 3) {
     lista.innerHTML = '';
     lista.classList.remove("active");
@@ -159,7 +164,7 @@ function mostrarSugestoes(cidades) {
 
 document.addEventListener('click', (e) => {
   const lista = document.querySelector('#sugestoes');
-
+  
   if (!e.target.closest('#cidade')) {
     lista.innerHTML = '';
     lista.classList.remove("active");
