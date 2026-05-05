@@ -5,6 +5,7 @@ import mostrarOk from './okMensagem.js';
 import mostrarErroNet from './erroNet.js';
 import createSkeleton from './renderSkeleton.js';
 import { vozJavis } from './mapeamentoDom.js';
+import { vozJavis2 } from './mapeamentoDom.js';
 
 
 const chaveApi = '552c00ab853e988eb97637ded0156031';
@@ -34,7 +35,12 @@ function feedbackCampoVazio() {
   
   clearTimeout(timeCampoVazioId);
   
+  vozJavis2.currentTime = 0;
+  vozJavis2.volume = 0.6;
+  vozJavis2.play();
+  
   somErro.currentTime = 0;
+  somErro.volume = 0.4;
   somErro.play();
   
   navigator.vibrate?.(80);

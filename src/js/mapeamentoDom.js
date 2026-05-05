@@ -9,4 +9,5 @@ export const okCidade = document.querySelector(".ok-cidade");
 export const somOk = document.querySelector(".som-ok");
 export const somErro = document.querySelector(".som-erro");
 export const btnVoz = document.querySelector(".btn-voz");
-export const vozJavis = document.querySelector(".javis")
+export const vozJavis = document.querySelector(".javis");
+export const vozJavis2 = document.querySelector(".javis2")

@@ -15,6 +15,7 @@ export default function mostrarErro(msg, img = "") {
   dadosPrev.innerHTML = '<p>Erro ao encontrar cidade</p>'
   
   somErro.currentTime = 0;
+  somErro.volume = 0.4;
   somErro.play();
   
   navigator.vibrate(90);
